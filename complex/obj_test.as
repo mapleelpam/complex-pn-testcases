@@ -24,11 +24,12 @@ internal class B
 
 
         printf(" %d ",a instanceof A); // CHECK: 1
-
         printf(" %d ",a instanceof Object ); //CHECK: 1
-
         printf(" %d ",a instanceof B ); //CHECK: 0
 
+        printf(" %d ",a is A); // CHECK: 1
+        printf(" %d ",a is Object ); //CHECK: 1
+        printf(" %d ",a is B ); //CHECK: 0
 
     }
 
