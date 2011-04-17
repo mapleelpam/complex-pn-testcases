@@ -31,6 +31,8 @@ internal class B
         printf(" %d ",a is Object ); //CHECK: 1
         printf(" %d ",a is B ); //CHECK: 0
 
+        printf(" %d ", strcmp(typeof a,"object") ); // CHECK: 0
+
     }
 
 
