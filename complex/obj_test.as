@@ -10,7 +10,7 @@ internal class A
 {
 	
 }
-internal class B
+internal class B extends A
 {
 	
 }
