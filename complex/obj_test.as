@@ -14,14 +14,16 @@ internal class B extends A
 {
 	
 }
+internal class C
+{
+	
+}
 
 
     function main():int
     {
-
         var a : A;
         a = new A();
-
 
         wprintf(" %d ",a instanceof A); // CHECK: 1
         wprintf(" %d ",a instanceof Object ); //CHECK: 1
@@ -31,6 +33,10 @@ internal class B extends A
         wprintf(" %d ",a is Object ); //CHECK: 1
         wprintf(" %d ",a is B ); //CHECK: 0
 
+        var b : B;
+        b = new B();
+
+        wprintf(" %d ",b instanceof C ); //CHECK: 0
     }
 
 
