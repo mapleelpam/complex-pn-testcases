@@ -25,18 +25,18 @@ internal class C
         var a : A;
         a = new A();
 
-        wprintf(" %d ",a instanceof A); // CHECK: 1
-        wprintf(" %d ",a instanceof Object ); //CHECK: 1
-        wprintf(" %d ",a instanceof B ); //CHECK: 0
+        printf(" %d ",a instanceof A); // CHECK: 1
+        printf(" %d ",a instanceof Object ); //CHECK: 1
+        printf(" %d ",a instanceof B ); //CHECK: 0
 
-        wprintf(" %d ",a is A); // CHECK: 1
-        wprintf(" %d ",a is Object ); //CHECK: 1
-        wprintf(" %d ",a is B ); //CHECK: 0
+        printf(" %d ",a is A); // CHECK: 1
+        printf(" %d ",a is Object ); //CHECK: 1
+        printf(" %d ",a is B ); //CHECK: 0
 
         var b : B;
         b = new B();
 
-        wprintf(" %d ",b instanceof C ); //CHECK: 0
+        printf(" %d ",b instanceof C ); //CHECK: 0
     }
 
 

@@ -21,15 +21,15 @@ package
         var xmlp:XMLList = new XMLList;
 
 /*
-        wprintf(" %d\n", strcmp(typeof ap,"object") ==0 ); // CHECK: 1
-        wprintf(" %d\n", strcmp(typeof bp,"boolean") ==0); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof ip,"number") ==0); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof np,"number") ==0); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof op,"object") ==0 ); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof sp,"string") ==0); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof up,"number") ==0); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof xp,"xml") ==0); // CHECK-NEXT: 1
-        wprintf(" %d\n", strcmp(typeof xmlp,"xml") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof ap,"object") ==0 ); // CHECK: 1
+        printf(" %d\n", strcmp(typeof bp,"boolean") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof ip,"number") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof np,"number") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof op,"object") ==0 ); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof sp,"string") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof up,"number") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof xp,"xml") ==0); // CHECK-NEXT: 1
+        printf(" %d\n", strcmp(typeof xmlp,"xml") ==0); // CHECK-NEXT: 1
 */
     }
 
