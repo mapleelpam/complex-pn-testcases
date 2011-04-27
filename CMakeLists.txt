@@ -3,7 +3,7 @@ project( "complex-test" )
 
 
     add_custom_target(runtest-complex
-#        DEPENDS ${EXECUTABLE_OUTPUT_PATH}/pn-tanslator
+#        DEPENDS pn-tanslator
 		COMMAND
             EXECUTABLE_OUTPUT_PATH="${EXECUTABLE_OUTPUT_PATH}"
             LIT_EXEC_ROOT=${CMAKE_CURRENT_BINARY_DIR}
