@@ -3,9 +3,6 @@
 // RUN: g++ -o %t %t.cpp -lruntime
 // RUN: %t | FileCheck -input-file=- %s 
 
-package
-{ 
-
 internal class A
 {
 }
@@ -27,4 +24,3 @@ internal class B
 
 //        printf(" %d ", wcscmp(typeof a,"object") ); // CH ECK: 0 
     } 
-}
