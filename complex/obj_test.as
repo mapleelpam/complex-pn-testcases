@@ -3,15 +3,15 @@
 // RUN: g++ -o %t %t.cpp -lruntime
 // RUN: %t | FileCheck -input-file=- %s 
 
-internal class A
+ class A
 {
 	
 }
-internal class B extends A
+ class B extends A
 {
 	
 }
-internal class C
+ class C
 {
 	
 }
