@@ -3,10 +3,10 @@
 // RUN: g++ -o %t %t.cpp -lruntime
 // RUN: %t | FileCheck -input-file=- %s 
 
-internal class A
+class A
 {
 }
-internal class B
+class B
 {
 } 
     function main():int
