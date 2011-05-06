@@ -26,5 +26,16 @@ function main():int
     {
         printf("4\n");    //CHECK: 4
     }
+
+    /*
+    if( s1 == "a" )
+    {
+        printf("5\n");  //C H E C K: 5
+    }
+    else
+    {
+        printf("6\n");    
+    }
+    */
 }
 
