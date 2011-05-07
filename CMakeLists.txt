@@ -4,7 +4,7 @@ project( "complex-test" )
 
     add_custom_target(runtest-complex
 #        DEPENDS pn-tanslator
-        DEPENDS pnc
+        DEPENDS pnc not FileCheck
 		COMMAND
             EXECUTABLE_OUTPUT_PATH="${EXECUTABLE_OUTPUT_PATH}"
             LIT_EXEC_ROOT=${CMAKE_CURRENT_BINARY_DIR}
