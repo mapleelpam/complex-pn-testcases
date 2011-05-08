@@ -37,5 +37,9 @@ function main() : int
 {
     var p3:flash.geom.Point = new flash.geom.Point();
     flash.geom.test();   
+
+    flash.geom.Point.distance(p3,p3);
+   // printf(" %d \n", flash.geom.Point.distance(p3,p3) );
+
 }
 
