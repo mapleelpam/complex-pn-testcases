@@ -3,6 +3,11 @@
 // RUN: g++ -o %t %t.cpp -lruntime -D_LINUX
 // RUN: %t | FileCheck -input-file=- %s 
 
+[native(cls="XCString", instance="XCString", methods="auto")]
+class String
+{
+    function String();
+}
 
 
 function main():int
@@ -12,7 +17,7 @@ function main():int
     var ip:Int = new Int;
     var np:Number = new Number;
     var op:Object = new Object;
-//    var sp:String = new String;
+    var sp:String = new String;
     var up:Uint = new Uint;
     var xp:XML = new XML;
     var xmlp:XMLList = new XMLList;

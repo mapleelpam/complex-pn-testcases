@@ -3,6 +3,13 @@
 // RUN: g++ -o %t %t.cpp -lruntime -D_LINUX
 // : %t | FileCheck -input-file=- %s 
 
+[native(cls="XCString", instance="XCString", methods="auto")]
+class String
+{
+    function String();
+}
+
+
 package flash.geom
 {
     intrinsic class Point {
