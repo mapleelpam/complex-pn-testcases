@@ -3,13 +3,6 @@
 // RUN: g++ -o %t %t.cpp -lruntime -D_LINUX
 // : %t | FileCheck -input-file=- %s 
 
-[native(cls="XCString", instance="XCString", methods="auto")]
-class String
-{
-    function String();
-}
-
-
 package flash.geom
 {
     intrinsic class Point {
@@ -40,13 +33,21 @@ package flash.geom
     }
 }
 
+[native(cls="XCString", instance="XCString", methods="auto")]
+class String
+{
+    function String();
+}
+
+
+
 function main() : int
 {
     var p3:flash.geom.Point = new flash.geom.Point();
     flash.geom.test();   
 
     flash.geom.Point.distance(p3,p3);
-   // printf(" %d \n", flash.geom.Point.distance(p3,p3) );
+    printf(" %d \n", flash.geom.Point.distance(p3,p3) );
 
 }
 
