@@ -38,6 +38,11 @@ class String
 {
     function String();
 }
+[native(cls="XCBoolean", instance="XCBoolean", methods="auto")]
+class Boolean
+{
+    function Boolean();
+}
 
 
 

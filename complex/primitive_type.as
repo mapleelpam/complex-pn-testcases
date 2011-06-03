@@ -9,11 +9,17 @@ class String
     function String();
 }
 
+[native(cls="XCBoolean", instance="XCBoolean", methods="auto")]
+class Boolean
+{
+    function Boolean();
+}
+
 
 function main():int
 {
     var ap:Array = new Array;
-//    var bp:Boolean = new Boolean;
+    var bp:Boolean = new Boolean;
     var ip:Int = new Int;
     var np:Number = new Number;
     var op:Object = new Object;
@@ -23,7 +29,7 @@ function main():int
     var xmlp:XMLList = new XMLList;
 
     printf(" %d\n", strcmp(typeof ap,"object") ==0 ); // CHECK: 1
-//    printf(" %d\n", strcmp(typeof bp,"boolean") ==0); // C HECK-NEXT: 1
+    printf(" %d\n", strcmp(typeof bp,"boolean") ==0); // C HECK-NEXT: 1
     printf(" %d\n", strcmp(typeof ip,"number") ==0); // CHECK-NEXT: 1
     printf(" %d\n", strcmp(typeof np,"number") ==0); // CHECK-NEXT: 1
     printf(" %d\n", strcmp(typeof op,"object") ==0 ); // CHECK-NEXT: 1
