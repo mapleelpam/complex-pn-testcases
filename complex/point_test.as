@@ -1,5 +1,5 @@
 // RUN: java -jar %ASC_JAR -x -z %t.pn  %s 
-// RUN: pnc %t.pn -l %s.ini -o %t.cpp
+// RUN: pnc %BUILTIN_PN %t.pn -l %s.ini -o %t.cpp
 // RUN: g++ -o %t %t.cpp -lruntime -D_LINUX
 // : %t | FileCheck -input-file=- %s 
 
