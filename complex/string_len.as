@@ -15,5 +15,7 @@ function main():int
 
     var l2:int = s2.length;
 	printf(" %d ", l2 );	// CHECK: 5
+
+	printf(" %d ", s2.length );	// CHECK: 5
 }
 
