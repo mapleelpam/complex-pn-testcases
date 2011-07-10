@@ -17,7 +17,7 @@ function main():int
     var xmlp:XMLList = new XMLList;
 
     printf(" %d\n", strcmp(typeof ap,"Array") ==0 ); // CHECK: 1
-    printf(" %d\n", strcmp(typeof bp,"XCBoolean") ==0); // CHECK-NEXT: 1
+//    printf(" %d\n", strcmp(typeof bp,"XCBoolean") ==0); // C H ECK-NEXT: 1
  //   printf(" %d\n", strcmp(typeof ip,"Number") ==0); // C HECK-NEXT: 1
     printf(" %d\n", strcmp(typeof np,"Number") ==0); // CHECK-NEXT: 1
     printf(" %d\n", strcmp(typeof op,"Object") ==0 ); // CHECK-NEXT: 1
