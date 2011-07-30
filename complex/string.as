@@ -5,8 +5,8 @@
 
 function main():int
 {
-    var s1: String = new String("a");
-    var s2: String = new String("b");
+    var s1: String = "a";
+    var s2: String = "b";
 
 //TBP
 //    var l:int = s1.length();

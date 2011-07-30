@@ -5,9 +5,9 @@
 
 function main():int
 {
-    var s1: String = new String("a");
-    var s2: String = new String("b");
-    var s3: String = new String("a");
+    var s1: String = "a";
+    var s2: String = "b";
+    var s3: String = "a";
 
     if( s1 == s3 )
     {
