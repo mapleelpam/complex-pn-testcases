@@ -1,6 +1,6 @@
 // RUN: java -jar %ASC_JAR -x -z %t.pn  %s 
 // RUN: pnc %t.pn -o %t.cpp -l %s.ini
-// RUN: g++ -o %t %t.cpp -lruntime -D_LINUX -lpcre++
+// RUN: g++ -o %t %t.cpp -lruntime -D_LINUX -lpcre
 // RUN: %t | FileCheck -input-file=- %s 
 
 package a

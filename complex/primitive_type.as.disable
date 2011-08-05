@@ -1,6 +1,6 @@
 // RUN: java -jar %ASC_JAR -x -z %t.pn  %s 
 // RUN: pnc %BUILTIN_PN %t.pn -l %s.ini -o %t.cpp
-// RUN: g++ -o %t %t.cpp -lruntime -D_LINUX -lpcre++
+// RUN: g++ -o %t %t.cpp -lruntime -D_LINUX -lpcre -ltinyxml
 // R U N: %t | FileCheck -input-file=- %s 
 
 
@@ -16,14 +16,14 @@ function main():int
     var xp:XML = new XML;
     var xmlp:XMLList = new XMLList;
 
-    printf(" %d\n", strcmp(typeof ap,"Array") ==0 ); // CHECK: 1
+    printf(" %d\n", (typeof ap == "Array")  ); // CHECK: 1
 //    printf(" %d\n", strcmp(typeof bp,"XCBoolean") ==0); // C H ECK-NEXT: 1
  //   printf(" %d\n", strcmp(typeof ip,"Number") ==0); // C HECK-NEXT: 1
 //    printf(" %d\n", strcmp(typeof np,"Number") ==0); // C HECK-NEXT: 1
-    printf(" %d\n", strcmp(typeof op,"Object") ==0 ); // CHECK-NEXT: 1
+    printf(" %d\n", (typeof op == "Object") ); // CHECK-NEXT: 1
 //    printf(" %d\n", strcmp(typeof sp,"XCString") ==0); // CHECK-NEXT: 1
 //    printf(" %d\n", strcmp(typeof up,"number") ==0); // C H E C K-NEXT: 1
-    printf(" %d\n", strcmp(typeof xp,"XML") ==0); // CHECK-NEXT: 1
-    printf(" %d\n", strcmp(typeof xmlp,"xml") ==0); // CHECK-NEXT: 1
+    printf(" %d\n", typeof xp == "XML" ); // CHECK-NEXT: 1
+    printf(" %d\n", typeof xmlp == "xml"); // CHECK-NEXT: 1
 }
 
