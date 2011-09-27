@@ -24,26 +24,26 @@ class b extends a
       super(1);
 
 		var test: a = new a(1);
-		delete test;
+	//	delete test;
    }
 
     function test_array()
     {
-        var myA:Array= new Array("1","2","3");
-        delete myA[1];
+   //     var myA:Array= new Array("1","2","3");
+//        delete myA[1];
     }
     function test_dict()
     {
          var dict:Dictionary=new Dictionary();
-         var key:Object = new Object();
-         dict[key] = "Letters";
-         delete dict[key];
+  //       var key:Object = new Object();
+ //        dict[key] = "Letters";
+//         delete dict[key];
     }
     function test_prop()
     {
         var obj:Object = new Object();
 //        obj.hello="nihao";
-//        delete key.obj;
+        delete obj.hello;
     }
 
   public var member2:int = 0;
