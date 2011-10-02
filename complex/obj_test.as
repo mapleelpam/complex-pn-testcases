@@ -13,7 +13,9 @@
 }
  class C
 {
-	
+	function test_not_void():*
+	{
+	}	
 }
 
 
