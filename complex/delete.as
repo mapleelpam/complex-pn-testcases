@@ -37,14 +37,16 @@ class b extends a
          var dict:Dictionary=new Dictionary();
   //       var key:Object = new Object();
  //        dict[key] = "Letters";
-//         delete dict[key];
+         delete dict[key];
     }
+/*
     function test_prop()
     {
         var obj:Object = new Object();
 //        obj.hello="nihao";
         delete obj.hello;
     }
+*/
 
   public var member2:int = 0;
 }
