@@ -39,14 +39,12 @@ class b extends a
  //        dict[key] = "Letters";
          delete dict[key];
     }
-/*
     function test_prop()
     {
         var obj:Object = new Object();
 //        obj.hello="nihao";
         delete obj.hello;
     }
-*/
 
   public var member2:int = 0;
 }
