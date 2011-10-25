@@ -12,4 +12,9 @@ function main():int
 	idx = a.indexOf("123", 0 );
 }
 
+function test_param( s:String ) : int
+{
+
+	return s.length;
+}
 
