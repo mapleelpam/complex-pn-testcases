@@ -7,18 +7,13 @@
 
 function main():int
 {
-    var a : String;
-	var idx : int;
-	idx = a.indexOf("123", 0 );
+    var a : Object;
+    var ar : Array;
+    var key : String;
 
+    a[ key ] = main ();
 
-    var b1 : String = "hello" + a;
-    var b2 : String = a + "hello";
+    ar[ key ] = main ();
 }
 
-function test_param( s:String ) : int
-{
-
-	return s.length;
-}
 
