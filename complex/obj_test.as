@@ -5,7 +5,7 @@
 
  class A
 {
-	
+	const a:int;	
 }
  class B extends A
 {
