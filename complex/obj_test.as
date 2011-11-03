@@ -1,5 +1,6 @@
 // RUN: java -jar %ASC_JAR -x -z %t.pn  %s 
 // RUN: pnc %t.pn -l %s.ini -o %t.cpp %BUILTIN_PN
+// RUN: pnc %t.pn --symbol -l %s.ini -o %t.sym %BUILTIN_PN
 // R U N: g++ -o %t %t.cpp -lruntime -D_LINUX -lpcre
 // R U N: %t | FileCheck -input-file=- %s 
 
@@ -15,6 +16,22 @@
 {
 	function test_not_void():*
 	{
+	}	
+	function test_void():void
+	{
+	}	
+	function test_Void():Void
+	{
+		var obj:Object;
+		var str:String="123";
+		var i:int;
+		trace(obj+"hello world",str,i);
+/*
+		trace("helllo");
+		trace(1);
+		trace(1,2);
+		trace("hello world",i);
+*/
 	}	
 }
 
