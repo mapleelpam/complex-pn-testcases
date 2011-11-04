@@ -26,6 +26,9 @@
 		var str:String="123";
 		var i:int;
 		trace(obj+"hello world",str,i);
+		
+
+		
 /*
 		trace("helllo");
 		trace(1);

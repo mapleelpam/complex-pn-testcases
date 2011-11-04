@@ -13,6 +13,7 @@ package
 	import flash.events.IOErrorEvent;
 	import flash.events.ProgressEvent;
 	import flash.events.TextEvent;
+	import flash.events.TouchEvent;
 	import flash.filters.BlurFilter;
 	import flash.filters.DropShadowFilter;
 	import flash.filters.GlowFilter;
@@ -124,6 +125,15 @@ package
 				}
 			}
 
+		}
+
+		public function test():void
+		{
+			var nb:Number=10.0;
+			var i:int=10;
+			var event:TouchEvent=new TouchEvent("touchevent");
+			var str:String ="test";
+			trace(str+"hello",nb,i,event);
 		}
 	}
 }
